@@ -1,0 +1,663 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - list:
+          - listitem [ref=e7]:
+            - link "Sign in" [ref=e8] [cursor=pointer]:
+              - /url: /login
+          - listitem [ref=e9]:
+            - link "Register" [ref=e10] [cursor=pointer]:
+              - /url: /account/register
+      - list:
+        - listitem [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e13]:
+          - link "Projects" [ref=e14] [cursor=pointer]:
+            - /url: /projects
+        - listitem [ref=e15]:
+          - link "Help" [ref=e16] [cursor=pointer]:
+            - /url: https://www.redmine.org/guide
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - link "Search" [ref=e21] [cursor=pointer]:
+              - /url: /projects/redmine/search?scope=subprojects
+            - text: ":"
+          - textbox "Search:" [ref=e22]
+        - generic [ref=e24] [cursor=pointer]: Redmine
+      - heading "Redmine" [level=1] [ref=e25]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - link "Overview" [ref=e29] [cursor=pointer]:
+            - /url: /projects/redmine
+        - listitem [ref=e30]:
+          - link "Download" [ref=e31] [cursor=pointer]:
+            - /url: /projects/redmine/wiki/Download
+        - listitem [ref=e32]:
+          - link "Activity" [ref=e33] [cursor=pointer]:
+            - /url: /projects/redmine/activity
+        - listitem [ref=e34]:
+          - link "Roadmap" [ref=e35] [cursor=pointer]:
+            - /url: /projects/redmine/roadmap
+        - listitem [ref=e36]:
+          - link "Issues" [ref=e37] [cursor=pointer]:
+            - /url: /projects/redmine/issues
+        - listitem [ref=e38]:
+          - link "News" [ref=e39] [cursor=pointer]:
+            - /url: /projects/redmine/news
+        - listitem [ref=e40]:
+          - link "Wiki" [ref=e41] [cursor=pointer]:
+            - /url: /projects/redmine/wiki
+        - listitem [ref=e42]:
+          - link "Forums" [ref=e43] [cursor=pointer]:
+            - /url: /projects/redmine/boards
+        - listitem [ref=e44]:
+          - link "Repository" [ref=e45] [cursor=pointer]:
+            - /url: /projects/redmine/repository
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - heading "Custom queries" [level=3] [ref=e48]
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Documentation issues" [ref=e51] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=84
+          - listitem [ref=e52]:
+            - link "Open defects" [ref=e53] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=1
+          - listitem [ref=e54]:
+            - link "Open features" [ref=e55] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=2
+          - listitem [ref=e56]:
+            - link "Patch queue" [ref=e57] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=931
+          - listitem [ref=e58]:
+            - link "Plugin issues" [ref=e59] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=42
+          - listitem [ref=e60]:
+            - link "Translation patches" [ref=e61] [cursor=pointer]:
+              - /url: /projects/redmine/issues?query_id=7
+        - insertion [ref=e62]:
+          - iframe [ref=e64]:
+            - generic [active] [ref=f1e1]:
+              - generic [ref=f1e3]:
+                - link:
+                  - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=ChP76hhYSaZTPF-Wo2OMPnZ2ZsQf8mIeygwHVrdDy7hTZ2R4QASDBl_QHYKXGoobkIqABxM7OowPIAQKpAtmEIGsElFk-qAMByAPJBKoE5AFP0I3nEHt-95Bqle5VmJpgbBqsaYx--YUXfcNugBYn74ERiNP_1G1DYuhqn0Qem8f8ENopUdeZxkIA4TKTq0s1vw1_f4w1CeDecBm7uHy7NBqDCO5M5VBFQE2vzzJXDfHsRVuUk5lMpqjCZMBxrNMj5GurSGdAszEw7k6qbCqvKvZZ4JDGjhWLHL1d2C92kPknSXwaDICwvvUHffJqL7M9gS2BTwRp41zFaKy7CDL26UQI-KNPGwIN9S6zt_mtOwAfyWEAx12xI1jaduPPV41Onu6FB_7a0V-QMsY4dvZqRs0raePABMW9nMm6BYgFlteEslagBgKAB6SxsVyoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgHmgaoB5jFsQKoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCC8IgGEQARifATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOljc8cuBhOiQA5oJNGh0dHBzOi8vd3d3LndhdHNvbnMudWEvdWsvYy9tZWhhLXpueXpoa3kvYnJhbmQ9RE9NT0yxCfaz5I4_r5PVgAoByAsB4AsBogwDkAEBqg0CVUHIDQHqDRMIst7wgYTokAMVZRR2Bh2dTiZ2iA4F2BMD0BUBmBYByhYCCgD4FgGAFwGyFwIYAboXAjgBshgJEgK3URgCIgEA0BgB6BgBwhkCCAE&gclid=EAIaIQobChMIlKrQgYTokAMVZRR2Bh2dTiZ2EAEYASAAEgJg8_D_BwE&num=1&cid=CAQSnwEAwksa0WUYZ4HvQXb0hnduD2ZLU9FrzQCgXjubWCxls5SlRNghKbac8Gjybz8SGyoXOCfAUzANi6EBAOwxAZDD734mmdVC7f9eMfWq1t52er0kM2gMsrToLVNVtebrSnuRMuPsEnUcZSEzalAxzRNChJAPpnEUBL9i9GYGLevVtvKXUGf8sgzIGKGXwfbUe8-7TB7KtezL5MSFZ9L4cR0YAQ&sig=AOD64_3JRVMjpvFNBZjVqBwoBXZoXwQFbg&client=ca-pub-0447284344517370&rf=2&nb=2&adurl=https://clickserve.dartsearch.net/link/click%3F%26ds_a_cid%3D194248251%26ds_a_caid%3D23190383510%26ds_a_agid%3D187521507013%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D780958387428%26ds_e_matchtype%3Dcontent%26ds_e_device%3Dc%26ds_e_network%3Dd%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://www.watsons.ua/uk/c/meha-znyzhky/brand%3DDOMOL%3Fgclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D23190383510
+                - img [ref=f1e7] [cursor=pointer]
+                - button [ref=f1e9] [cursor=pointer]:
+                  - img [ref=f1e10]
+              - iframe
+      - generic [ref=e65]:
+        - generic "Actions" [ref=e69] [cursor=pointer]
+        - heading "Issues" [level=2] [ref=e70]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - group "Filters" [ref=e74]:
+              - generic [ref=e75] [cursor=pointer]: Filters
+              - generic:
+                - table [ref=e76]:
+                  - row "Status open" [ref=e77]:
+                    - cell "Status" [ref=e78]:
+                      - checkbox "Status" [checked] [ref=e79]
+                      - text: Status
+                    - cell "open" [ref=e80]:
+                      - combobox [ref=e81]:
+                        - option "open" [selected]
+                        - option "is"
+                        - option "is not"
+                        - option "closed"
+                        - option "any"
+                    - cell [ref=e82]
+                - generic [ref=e83]:
+                  - text: Add filter
+                  - combobox "Add filter" [ref=e84]:
+                    - option [selected]
+                    - option "Status" [disabled]
+                    - option "Tracker"
+                    - option "Priority"
+                    - option "Author"
+                    - option "Assignee"
+                    - option "Target version"
+                    - option "Category"
+                    - option "Subject"
+                    - option "Description"
+                    - option "% Done"
+                    - option "File"
+                    - option "Updated by"
+                    - option "Last updated by"
+                    - option "Subproject"
+                    - option "Resolution"
+                    - option "Affected version"
+                    - option "Issue"
+                    - text: Assignee
+                    - option "Assignee's group"
+                    - option "Assignee's role"
+                    - text: Target version
+                    - option "Target version's Due date"
+                    - option "Target version's Status"
+                    - text: Date
+                    - option "Created"
+                    - option "Updated"
+                    - option "Closed"
+                    - option "Start date"
+                    - option "Due date"
+                    - text: Time tracking
+                    - option "Estimated time"
+                    - text: Project
+                    - option "Project's Status"
+                    - text: Affected version
+                    - option "Affected version's Due date"
+                    - option "Affected version's Status"
+                    - text: Relations
+                    - option "Related to"
+                    - option "Is duplicate of"
+                    - option "Has duplicate"
+                    - option "Blocks"
+                    - option "Blocked by"
+                    - option "Precedes"
+                    - option "Follows"
+                    - option "Copied to"
+                    - option "Copied from"
+                    - option "Parent task"
+                    - option "Subtasks"
+            - group "Options" [ref=e85]:
+              - generic [ref=e86] [cursor=pointer]: Options
+          - paragraph [ref=e87]:
+            - link "Apply" [ref=e88] [cursor=pointer]:
+              - /url: "#"
+            - link "Clear" [ref=e89] [cursor=pointer]:
+              - /url: /projects/redmine/issues?set_filter=1&sort=
+        - table [ref=e92]:
+          - rowgroup [ref=e93]:
+            - 'row "Check all/Uncheck all # Tracker Status Subject Updated Category" [ref=e94]':
+              - cell "Check all/Uncheck all" [ref=e95]:
+                - checkbox "Check all/Uncheck all" [ref=e96]
+              - cell "#" [ref=e97]:
+                - link "#" [ref=e98] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=id
+              - cell "Tracker" [ref=e99]:
+                - link "Tracker" [ref=e100] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=tracker%2Cid%3Adesc
+              - cell "Status" [ref=e101]:
+                - link "Status" [ref=e102] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=status%2Cid%3Adesc
+              - cell "Subject" [ref=e103]:
+                - link "Subject" [ref=e104] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=subject%2Cid%3Adesc
+              - cell "Updated" [ref=e105]:
+                - link "Updated" [ref=e106] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=updated_on%3Adesc%2Cid%3Adesc
+              - cell "Category" [ref=e107]:
+                - link "Category" [ref=e108] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?sort=category%2Cid%3Adesc
+              - cell [ref=e109]
+          - rowgroup [ref=e110]:
+            - 'row "43457 Patch New Postgresql installation documentation: Public schema and schema_search_path 2025-11-10 15:12 Documentation Actions" [ref=e111]':
+              - cell [ref=e112]:
+                - checkbox [ref=e113]
+              - cell "43457" [ref=e114]:
+                - link "43457" [ref=e115] [cursor=pointer]:
+                  - /url: /issues/43457
+              - cell "Patch" [ref=e116]
+              - cell "New" [ref=e117]
+              - 'cell "Postgresql installation documentation: Public schema and schema_search_path" [ref=e118]':
+                - 'link "Postgresql installation documentation: Public schema and schema_search_path" [ref=e119] [cursor=pointer]':
+                  - /url: /issues/43457
+              - cell "2025-11-10 15:12" [ref=e120]
+              - cell "Documentation" [ref=e121]
+              - cell "Actions" [ref=e122]:
+                - link "Actions" [ref=e123] [cursor=pointer]:
+                  - /url: "#"
+            - row "43456 Defect New Inlocuirea scaunelor defecte 2025-11-10 09:31 Administration Actions" [ref=e124]:
+              - cell [ref=e125]:
+                - checkbox [ref=e126]
+              - cell "43456" [ref=e127]:
+                - link "43456" [ref=e128] [cursor=pointer]:
+                  - /url: /issues/43456
+              - cell "Defect" [ref=e129]
+              - cell "New" [ref=e130]
+              - cell "Inlocuirea scaunelor defecte" [ref=e131]:
+                - link "Inlocuirea scaunelor defecte" [ref=e132] [cursor=pointer]:
+                  - /url: /issues/43456
+              - cell "2025-11-10 09:31" [ref=e133]
+              - cell "Administration" [ref=e134]
+              - cell "Actions" [ref=e135]:
+                - link "Actions" [ref=e136] [cursor=pointer]:
+                  - /url: "#"
+            - row "43447 Patch New Update INSALL document with mentioning about additional_envrionment.rb 2025-11-09 13:27 Documentation Actions" [ref=e137]:
+              - cell [ref=e138]:
+                - checkbox [ref=e139]
+              - cell "43447" [ref=e140]:
+                - link "43447" [ref=e141] [cursor=pointer]:
+                  - /url: /issues/43447
+              - cell "Patch" [ref=e142]
+              - cell "New" [ref=e143]
+              - cell "Update INSALL document with mentioning about additional_envrionment.rb" [ref=e144]:
+                - link "Update INSALL document with mentioning about additional_envrionment.rb" [ref=e145] [cursor=pointer]:
+                  - /url: /issues/43447
+              - cell "2025-11-09 13:27" [ref=e146]
+              - cell "Documentation" [ref=e147]
+              - cell "Actions" [ref=e148]:
+                - link "Actions" [ref=e149] [cursor=pointer]:
+                  - /url: "#"
+            - 'row "43446 Defect New CommonMark rendering became significantly slower after #42737 2025-11-10 07:46 Performance Actions" [ref=e150]':
+              - cell [ref=e151]:
+                - checkbox [ref=e152]
+              - cell "43446" [ref=e153]:
+                - link "43446" [ref=e154] [cursor=pointer]:
+                  - /url: /issues/43446
+              - cell "Defect" [ref=e155]
+              - cell "New" [ref=e156]
+              - 'cell "CommonMark rendering became significantly slower after #42737" [ref=e157]':
+                - 'link "CommonMark rendering became significantly slower after #42737" [ref=e158] [cursor=pointer]':
+                  - /url: /issues/43446
+              - cell "2025-11-10 07:46" [ref=e159]
+              - cell "Performance" [ref=e160]
+              - cell "Actions" [ref=e161]:
+                - link "Actions" [ref=e162] [cursor=pointer]:
+                  - /url: "#"
+            - row "43435 Patch New Check missing copyright sections using Rubocop 2025-11-05 05:02 Actions" [ref=e163]:
+              - cell [ref=e164]:
+                - checkbox [ref=e165]
+              - cell "43435" [ref=e166]:
+                - link "43435" [ref=e167] [cursor=pointer]:
+                  - /url: /issues/43435
+              - cell "Patch" [ref=e168]
+              - cell "New" [ref=e169]
+              - cell "Check missing copyright sections using Rubocop" [ref=e170]:
+                - link "Check missing copyright sections using Rubocop" [ref=e171] [cursor=pointer]:
+                  - /url: /issues/43435
+              - cell "2025-11-05 05:02" [ref=e172]
+              - cell [ref=e173]
+              - cell "Actions" [ref=e174]:
+                - link "Actions" [ref=e175] [cursor=pointer]:
+                  - /url: "#"
+            - row "43433 Patch New Update fa-IR translation to 6.1-stable 2025-11-04 01:23 Translations Actions" [ref=e176]:
+              - cell [ref=e177]:
+                - checkbox [ref=e178]
+              - cell "43433" [ref=e179]:
+                - link "43433" [ref=e180] [cursor=pointer]:
+                  - /url: /issues/43433
+              - cell "Patch" [ref=e181]
+              - cell "New" [ref=e182]
+              - cell "Update fa-IR translation to 6.1-stable" [ref=e183]:
+                - link "Update fa-IR translation to 6.1-stable" [ref=e184] [cursor=pointer]:
+                  - /url: /issues/43433
+              - cell "2025-11-04 01:23" [ref=e185]
+              - cell "Translations" [ref=e186]
+              - cell "Actions" [ref=e187]:
+                - link "Actions" [ref=e188] [cursor=pointer]:
+                  - /url: "#"
+            - row "43429 Patch New Remove unused method addable_watcher_users from acts_as_watchable.rb 2025-11-03 02:34 Code cleanup/refactoring Actions" [ref=e189]:
+              - cell [ref=e190]:
+                - checkbox [ref=e191]
+              - cell "43429" [ref=e192]:
+                - link "43429" [ref=e193] [cursor=pointer]:
+                  - /url: /issues/43429
+              - cell "Patch" [ref=e194]
+              - cell "New" [ref=e195]
+              - cell "Remove unused method addable_watcher_users from acts_as_watchable.rb" [ref=e196]:
+                - link "Remove unused method addable_watcher_users from acts_as_watchable.rb" [ref=e197] [cursor=pointer]:
+                  - /url: /issues/43429
+              - cell "2025-11-03 02:34" [ref=e198]
+              - cell "Code cleanup/refactoring" [ref=e199]
+              - cell "Actions" [ref=e200]:
+                - link "Actions" [ref=e201] [cursor=pointer]:
+                  - /url: "#"
+            - row "43428 Patch New Update Rails to 8.1 2025-11-02 02:11 Rails support Actions" [ref=e202]:
+              - cell [ref=e203]:
+                - checkbox [ref=e204]
+              - cell "43428" [ref=e205]:
+                - link "43428" [ref=e206] [cursor=pointer]:
+                  - /url: /issues/43428
+              - cell "Patch" [ref=e207]
+              - cell "New" [ref=e208]
+              - cell "Update Rails to 8.1" [ref=e209]:
+                - link "Update Rails to 8.1" [ref=e210] [cursor=pointer]:
+                  - /url: /issues/43428
+              - cell "2025-11-02 02:11" [ref=e211]
+              - cell "Rails support" [ref=e212]
+              - cell "Actions" [ref=e213]:
+                - link "Actions" [ref=e214] [cursor=pointer]:
+                  - /url: "#"
+            - row "43407 Feature New Add more metadata to custom field definitions in the REST API 2025-10-27 19:19 REST API Actions" [ref=e215]:
+              - cell [ref=e216]:
+                - checkbox [ref=e217]
+              - cell "43407" [ref=e218]:
+                - link "43407" [ref=e219] [cursor=pointer]:
+                  - /url: /issues/43407
+              - cell "Feature" [ref=e220]
+              - cell "New" [ref=e221]
+              - cell "Add more metadata to custom field definitions in the REST API" [ref=e222]:
+                - link "Add more metadata to custom field definitions in the REST API" [ref=e223] [cursor=pointer]:
+                  - /url: /issues/43407
+              - cell "2025-10-27 19:19" [ref=e224]
+              - cell "REST API" [ref=e225]
+              - cell "Actions" [ref=e226]:
+                - link "Actions" [ref=e227] [cursor=pointer]:
+                  - /url: "#"
+            - row "43381 Patch New Improve visibility of error message during file upload 2025-10-26 08:51 UI Actions" [ref=e228]:
+              - cell [ref=e229]:
+                - checkbox [ref=e230]
+              - cell "43381" [ref=e231]:
+                - link "43381" [ref=e232] [cursor=pointer]:
+                  - /url: /issues/43381
+              - cell "Patch" [ref=e233]
+              - cell "New" [ref=e234]
+              - cell "Improve visibility of error message during file upload" [ref=e235]:
+                - link "Improve visibility of error message during file upload" [ref=e236] [cursor=pointer]:
+                  - /url: /issues/43381
+              - cell "2025-10-26 08:51" [ref=e237]
+              - cell "UI" [ref=e238]
+              - cell "Actions" [ref=e239]:
+                - link "Actions" [ref=e240] [cursor=pointer]:
+                  - /url: "#"
+            - row "43375 Defect New Plugin required precompile in order to function 2025-10-21 14:57 Actions" [ref=e241]:
+              - cell [ref=e242]:
+                - checkbox [ref=e243]
+              - cell "43375" [ref=e244]:
+                - link "43375" [ref=e245] [cursor=pointer]:
+                  - /url: /issues/43375
+              - cell "Defect" [ref=e246]
+              - cell "New" [ref=e247]
+              - cell "Plugin required precompile in order to function" [ref=e248]:
+                - link "Plugin required precompile in order to function" [ref=e249] [cursor=pointer]:
+                  - /url: /issues/43375
+              - cell "2025-10-21 14:57" [ref=e250]
+              - cell [ref=e251]
+              - cell "Actions" [ref=e252]:
+                - link "Actions" [ref=e253] [cursor=pointer]:
+                  - /url: "#"
+            - row "43372 Patch New update macro recent_pages, to display pages from a specific project 2025-10-22 09:05 Wiki Actions" [ref=e254]:
+              - cell [ref=e255]:
+                - checkbox [ref=e256]
+              - cell "43372" [ref=e257]:
+                - link "43372" [ref=e258] [cursor=pointer]:
+                  - /url: /issues/43372
+              - cell "Patch" [ref=e259]
+              - cell "New" [ref=e260]
+              - cell "update macro recent_pages, to display pages from a specific project" [ref=e261]:
+                - link "update macro recent_pages, to display pages from a specific project" [ref=e262] [cursor=pointer]:
+                  - /url: /issues/43372
+              - cell "2025-10-22 09:05" [ref=e263]
+              - cell "Wiki" [ref=e264]
+              - cell "Actions" [ref=e265]:
+                - link "Actions" [ref=e266] [cursor=pointer]:
+                  - /url: "#"
+            - row "43364 Patch New Enable parent-child project checkbox synchronization 2025-10-17 13:52 Actions" [ref=e267]:
+              - cell [ref=e268]:
+                - checkbox [ref=e269]
+              - cell "43364" [ref=e270]:
+                - link "43364" [ref=e271] [cursor=pointer]:
+                  - /url: /issues/43364
+              - cell "Patch" [ref=e272]
+              - cell "New" [ref=e273]
+              - cell "Enable parent-child project checkbox synchronization" [ref=e274]:
+                - link "Enable parent-child project checkbox synchronization" [ref=e275] [cursor=pointer]:
+                  - /url: /issues/43364
+              - cell "2025-10-17 13:52" [ref=e276]
+              - cell [ref=e277]
+              - cell "Actions" [ref=e278]:
+                - link "Actions" [ref=e279] [cursor=pointer]:
+                  - /url: "#"
+            - row "43360 Defect Confirmed RestApi modify/add wiki page results in broken wiki state 2025-10-16 16:59 Wiki Actions" [ref=e280]:
+              - cell [ref=e281]:
+                - checkbox [ref=e282]
+              - cell "43360" [ref=e283]:
+                - link "43360" [ref=e284] [cursor=pointer]:
+                  - /url: /issues/43360
+              - cell "Defect" [ref=e285]
+              - cell "Confirmed" [ref=e286]
+              - cell "RestApi modify/add wiki page results in broken wiki state" [ref=e287]:
+                - link "RestApi modify/add wiki page results in broken wiki state" [ref=e288] [cursor=pointer]:
+                  - /url: /issues/43360
+              - cell "2025-10-16 16:59" [ref=e289]
+              - cell "Wiki" [ref=e290]
+              - cell "Actions" [ref=e291]:
+                - link "Actions" [ref=e292] [cursor=pointer]:
+                  - /url: "#"
+            - row "43355 Feature New Add pagination support for members and groups management views 2025-10-15 22:23 Groups Actions" [ref=e293]:
+              - cell [ref=e294]:
+                - checkbox [ref=e295]
+              - cell "43355" [ref=e296]:
+                - link "43355" [ref=e297] [cursor=pointer]:
+                  - /url: /issues/43355
+              - cell "Feature" [ref=e298]
+              - cell "New" [ref=e299]
+              - cell "Add pagination support for members and groups management views" [ref=e300]:
+                - link "Add pagination support for members and groups management views" [ref=e301] [cursor=pointer]:
+                  - /url: /issues/43355
+              - cell "2025-10-15 22:23" [ref=e302]
+              - cell "Groups" [ref=e303]
+              - cell "Actions" [ref=e304]:
+                - link "Actions" [ref=e305] [cursor=pointer]:
+                  - /url: "#"
+            - row "43353 Feature New Introduce protected_settings for enforced (read‑only) settings 2025-10-15 09:54 Administration Actions" [ref=e306]:
+              - cell [ref=e307]:
+                - checkbox [ref=e308]
+              - cell "43353" [ref=e309]:
+                - link "43353" [ref=e310] [cursor=pointer]:
+                  - /url: /issues/43353
+              - cell "Feature" [ref=e311]
+              - cell "New" [ref=e312]
+              - cell "Introduce protected_settings for enforced (read‑only) settings" [ref=e313]:
+                - link "Introduce protected_settings for enforced (read‑only) settings" [ref=e314] [cursor=pointer]:
+                  - /url: /issues/43353
+              - cell "2025-10-15 09:54" [ref=e315]
+              - cell "Administration" [ref=e316]
+              - cell "Actions" [ref=e317]:
+                - link "Actions" [ref=e318] [cursor=pointer]:
+                  - /url: "#"
+            - row "43352 Feature New Provide an option to authenticate in Redmine through an OAuth provider. 2025-10-28 14:23 Accounts / authentication Actions" [ref=e319]:
+              - cell [ref=e320]:
+                - checkbox [ref=e321]
+              - cell "43352" [ref=e322]:
+                - link "43352" [ref=e323] [cursor=pointer]:
+                  - /url: /issues/43352
+              - cell "Feature" [ref=e324]
+              - cell "New" [ref=e325]
+              - cell "Provide an option to authenticate in Redmine through an OAuth provider." [ref=e326]:
+                - link "Provide an option to authenticate in Redmine through an OAuth provider." [ref=e327] [cursor=pointer]:
+                  - /url: /issues/43352
+              - cell "2025-10-28 14:23" [ref=e328]
+              - cell "Accounts / authentication" [ref=e329]
+              - cell "Actions" [ref=e330]:
+                - link "Actions" [ref=e331] [cursor=pointer]:
+                  - /url: "#"
+            - 'row "43350 Defect Needs feedback When accessed via smartphone, a NameError occurs: ‘undefined local variable or method no_store’. 2025-10-14 19:08 Accounts / authentication Actions" [ref=e332]':
+              - cell [ref=e333]:
+                - checkbox [ref=e334]
+              - cell "43350" [ref=e335]:
+                - link "43350" [ref=e336] [cursor=pointer]:
+                  - /url: /issues/43350
+              - cell "Defect" [ref=e337]
+              - cell "Needs feedback" [ref=e338]
+              - 'cell "When accessed via smartphone, a NameError occurs: ‘undefined local variable or method no_store’." [ref=e339]':
+                - 'link "When accessed via smartphone, a NameError occurs: ‘undefined local variable or method no_store’." [ref=e340] [cursor=pointer]':
+                  - /url: /issues/43350
+              - cell "2025-10-14 19:08" [ref=e341]
+              - cell "Accounts / authentication" [ref=e342]
+              - cell "Actions" [ref=e343]:
+                - link "Actions" [ref=e344] [cursor=pointer]:
+                  - /url: "#"
+            - row "43341 Feature New Automatic creation of linked subtasks when creating a new issue 2025-10-10 13:43 Projects Actions" [ref=e345]:
+              - cell [ref=e346]:
+                - checkbox [ref=e347]
+              - cell "43341" [ref=e348]:
+                - link "43341" [ref=e349] [cursor=pointer]:
+                  - /url: /issues/43341
+              - cell "Feature" [ref=e350]
+              - cell "New" [ref=e351]
+              - cell "Automatic creation of linked subtasks when creating a new issue" [ref=e352]:
+                - link "Automatic creation of linked subtasks when creating a new issue" [ref=e353] [cursor=pointer]:
+                  - /url: /issues/43341
+              - cell "2025-10-10 13:43" [ref=e354]
+              - cell "Projects" [ref=e355]
+              - cell "Actions" [ref=e356]:
+                - link "Actions" [ref=e357] [cursor=pointer]:
+                  - /url: "#"
+            - row "43288 Feature New \"Enumerated list\" Custom field by project 2025-10-03 21:35 Custom fields Actions" [ref=e358]:
+              - cell [ref=e359]:
+                - checkbox [ref=e360]
+              - cell "43288" [ref=e361]:
+                - link "43288" [ref=e362] [cursor=pointer]:
+                  - /url: /issues/43288
+              - cell "Feature" [ref=e363]
+              - cell "New" [ref=e364]
+              - cell "\"Enumerated list\" Custom field by project" [ref=e365]:
+                - link "\"Enumerated list\" Custom field by project" [ref=e366] [cursor=pointer]:
+                  - /url: /issues/43288
+              - cell "2025-10-03 21:35" [ref=e367]
+              - cell "Custom fields" [ref=e368]
+              - cell "Actions" [ref=e369]:
+                - link "Actions" [ref=e370] [cursor=pointer]:
+                  - /url: "#"
+            - row "43285 Feature New Download activity log as csv 2025-10-06 10:58 Activity view Actions" [ref=e371]:
+              - cell [ref=e372]:
+                - checkbox [ref=e373]
+              - cell "43285" [ref=e374]:
+                - link "43285" [ref=e375] [cursor=pointer]:
+                  - /url: /issues/43285
+              - cell "Feature" [ref=e376]
+              - cell "New" [ref=e377]
+              - cell "Download activity log as csv" [ref=e378]:
+                - link "Download activity log as csv" [ref=e379] [cursor=pointer]:
+                  - /url: /issues/43285
+              - cell "2025-10-06 10:58" [ref=e380]
+              - cell "Activity view" [ref=e381]
+              - cell "Actions" [ref=e382]:
+                - link "Actions" [ref=e383] [cursor=pointer]:
+                  - /url: "#"
+            - row "43282 Defect New Locked users are not shown in gray in the user list 2025-10-02 03:20 Administration Actions" [ref=e384]:
+              - cell [ref=e385]:
+                - checkbox [ref=e386]
+              - cell "43282" [ref=e387]:
+                - link "43282" [ref=e388] [cursor=pointer]:
+                  - /url: /issues/43282
+              - cell "Defect" [ref=e389]
+              - cell "New" [ref=e390]
+              - cell "Locked users are not shown in gray in the user list" [ref=e391]:
+                - link "Locked users are not shown in gray in the user list" [ref=e392] [cursor=pointer]:
+                  - /url: /issues/43282
+              - cell "2025-10-02 03:20" [ref=e393]
+              - cell "Administration" [ref=e394]
+              - cell "Actions" [ref=e395]:
+                - link "Actions" [ref=e396] [cursor=pointer]:
+                  - /url: "#"
+            - row "43261 Feature New Add border-bottom to issue history to avoid accidental issue deletion 2025-09-28 22:28 UI Actions" [ref=e397]:
+              - cell [ref=e398]:
+                - checkbox [ref=e399]
+              - cell "43261" [ref=e400]:
+                - link "43261" [ref=e401] [cursor=pointer]:
+                  - /url: /issues/43261
+              - cell "Feature" [ref=e402]
+              - cell "New" [ref=e403]
+              - cell "Add border-bottom to issue history to avoid accidental issue deletion" [ref=e404]:
+                - link "Add border-bottom to issue history to avoid accidental issue deletion" [ref=e405] [cursor=pointer]:
+                  - /url: /issues/43261
+              - cell "2025-09-28 22:28" [ref=e406]
+              - cell "UI" [ref=e407]
+              - cell "Actions" [ref=e408]:
+                - link "Actions" [ref=e409] [cursor=pointer]:
+                  - /url: "#"
+            - row "43259 Patch New Convert jstoolbar to ES modules and class syntax. 2025-09-28 23:28 Code cleanup/refactoring Actions" [ref=e410]:
+              - cell [ref=e411]:
+                - checkbox [ref=e412]
+              - cell "43259" [ref=e413]:
+                - link "43259" [ref=e414] [cursor=pointer]:
+                  - /url: /issues/43259
+              - cell "Patch" [ref=e415]
+              - cell "New" [ref=e416]
+              - cell "Convert jstoolbar to ES modules and class syntax." [ref=e417]:
+                - link "Convert jstoolbar to ES modules and class syntax." [ref=e418] [cursor=pointer]:
+                  - /url: /issues/43259
+              - cell "2025-09-28 23:28" [ref=e419]
+              - cell "Code cleanup/refactoring" [ref=e420]
+              - cell "Actions" [ref=e421]:
+                - link "Actions" [ref=e422] [cursor=pointer]:
+                  - /url: "#"
+            - row "43258 Feature New automatic list marker - with SHIFT-RETURN just a new line 2025-09-29 08:43 UI Actions" [ref=e423]:
+              - cell [ref=e424]:
+                - checkbox [ref=e425]
+              - cell "43258" [ref=e426]:
+                - link "43258" [ref=e427] [cursor=pointer]:
+                  - /url: /issues/43258
+              - cell "Feature" [ref=e428]
+              - cell "New" [ref=e429]
+              - cell "automatic list marker - with SHIFT-RETURN just a new line" [ref=e430]:
+                - link "automatic list marker - with SHIFT-RETURN just a new line" [ref=e431] [cursor=pointer]:
+                  - /url: /issues/43258
+              - cell "2025-09-29 08:43" [ref=e432]
+              - cell "UI" [ref=e433]
+              - cell "Actions" [ref=e434]:
+                - link "Actions" [ref=e435] [cursor=pointer]:
+                  - /url: "#"
+        - generic [ref=e436]:
+          - list [ref=e437]:
+            - listitem [ref=e438]: « Previous
+            - listitem [ref=e439]: "1"
+            - listitem [ref=e440]:
+              - link "2" [ref=e441] [cursor=pointer]:
+                - /url: /projects/redmine/issues?page=2
+            - listitem [ref=e442]:
+              - link "3" [ref=e443] [cursor=pointer]:
+                - /url: /projects/redmine/issues?page=3
+            - listitem [ref=e444]: …
+            - listitem [ref=e445]:
+              - link "191" [ref=e446] [cursor=pointer]:
+                - /url: /projects/redmine/issues?page=191
+            - listitem [ref=e447]:
+              - link "Next »" [ref=e448] [cursor=pointer]:
+                - /url: /projects/redmine/issues?page=2
+          - generic [ref=e449]: (1-25/4770)
+        - paragraph [ref=e450]:
+          - text: "Also available in:"
+          - link "Atom" [ref=e452] [cursor=pointer]:
+            - /url: /projects/redmine/issues.atom
+    - generic [ref=e453]:
+      - text: Powered by
+      - link "Redmine" [ref=e454] [cursor=pointer]:
+        - /url: https://www.redmine.org/
+      - text: © 2006-2023 Jean-Philippe Lang
+  - log [ref=e455]
+  - log [ref=e456]
+  - log [ref=e457]
+  - log [ref=e458]
+  - log [ref=e459]
+  - log [ref=e460]
+  - log [ref=e461]
+  - log [ref=e462]
+  - log [ref=e463]
+  - log [ref=e464]
+  - log [ref=e465]
+  - log [ref=e466]
+  - log [ref=e467]
+  - log [ref=e468]
+  - log [ref=e469]
+  - log [ref=e470]
+  - log [ref=e471]
+  - log [ref=e472]
+  - log [ref=e473]
+  - log [ref=e474]
+  - log [ref=e475]
+  - log [ref=e476]
+  - log [ref=e477]
+  - log [ref=e478]
+  - log [ref=e479]
+  - log [ref=e480]
+  - log [ref=e481]
+  - log [ref=e482]
+  - log [ref=e483]
+  - log [ref=e484]
+  - log [ref=e485]
+  - log [ref=e486]
+  - log [ref=e487]
+  - log [ref=e488]
+  - log [ref=e489]
+  - log [ref=e490]
+```
