@@ -15,59 +15,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-    
     - name: Install Playwright browsers
       run: npx playwright install --with-deps chromium
-
-    - name: Get Allure history
-      uses: actions/checkout@v4
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: gh-pages
-    
-    - name: Copy Allure history
-      if: always()
-      continue-on-error: true
-      run: |
-        if [ -d "gh-pages/allure-report/history" ]; then
-          mkdir -p allure-results/history
-          cp -r gh-pages/allure-report/history/* allure-results/history/
-        fi
     
     - name: Run Playwright tests
-      if: always()
-      run: npm test
+      run: npx test
       continue-on-error: true
     
     - name: Generate Allure report
-      if: always()
       run: npx allure generate allure-results --clean -o allure-report
     
-    - name: Add executor info
-      if: always()
-      run: |
-        echo '{
-          "name": "GitHub Actions",
-          "type": "github",
-          "buildOrder": '$GITHUB_RUN_NUMBER',
-          "buildName": "Run #'$GITHUB_RUN_NUMBER'",
-          "buildUrl": "https://github.com/'$GITHUB_REPOSITORY'/actions/runs/'$GITHUB_RUN_ID'",
-          "reportUrl": "https://'${GITHUB_REPOSITORY_OWNER}'.github.io/'${GITHUB_REPOSITORY#*/}'/",
-          "reportName": "Allure Report"
-        }' > allure-report/widgets/executor.json
-    
     - name: Deploy Allure report to GitHub Pages
-      if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -75,28 +33,7 @@ jobs:
         publish_dir: allure-report
         keep_files: false
     
-    - name: Comment PR with report link
-      if: github.event_name == 'pull_request' && always()
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const reportUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/`;
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: `## 📊 Allure Report
-            
-            Tests completed! View the detailed report here:
-            
-            🔗 [Allure Report](${reportUrl})
-            
-            **Run:** #${context.runNumber}
-            **Commit:** ${context.sha.substring(0, 7)}`
-          });
-    
     - name: Upload Playwright report as artifact
-      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: playwright-report
@@ -104,7 +41,6 @@ jobs:
         retention-days: 30
     
     - name: Upload Allure results as artifact
-      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: allure-results
@@ -112,7 +48,6 @@ jobs:
         retention-days: 30
     
     - name: Upload Allure report as artifact
-      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: allure-report
